@@ -103,7 +103,6 @@ resnet.to(device)
 trainloss, train_acc, testloss, test_acc = [], [], [], []
 test_acc_per_class = [[] for _ in range(num_classes)]
 
-# 训练模型
 num_epochs = 200
 for epoch in range(num_epochs):
     resnet.train()
